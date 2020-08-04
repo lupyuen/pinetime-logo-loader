@@ -19,6 +19,32 @@
 #
 -->
 
+# PineTime Smart Watch Logo Loader
+
+Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUBoot Bootloader.
+
+1.  Fork this repo
+
+1.  Upload and replace the PNG image file [`pinetime-graphic.png`](pinetime-graphic.png) with the following specs...
+
+    -   240x240 resolution
+
+    -   24-bit RGB
+
+    -   Check the existing [`pinetime-graphic.png`](pinetime-graphic.png) for reference
+
+1.  GitHub Actions will auto-rebuild the firmware
+
+1.  Flash the firmware to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) (address `0x8000`) or via nRF Connect
+
+1.  The Boot Logo will be written to PineTime's External SPI Flash
+
+1.  Restore PineTime by flashing the original firmware, e.g. FreeRTOS
+
+1.  PineTime will now boot with the new Boot Logo
+
+This repo is a Custom Firmware Build of [`pinetime-rust-mynewt`](https://github.com/lupyuen/pinetime-rust-mynewt)...
+
 # PineTime Smart Watch Firmware with Apache Mynewt and Embedded Rust
 
 This `master` branch contains the firmware source code for PineTime Smart Watch with Apache Mynewt and Embedded Rust, with Wireless Firmware Updates. Refer to the articles...

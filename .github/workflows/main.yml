@@ -97,7 +97,7 @@ jobs:
           cd ${{ runner.temp }}/pinetime-graphic
           rustup default nightly
           export RUST_BACKTRACE=1
-          cargo run pinetime-graphic.png >~/pinetime-graphic.inc
+          cargo run -q pinetime-graphic.png >~/pinetime-graphic.inc
 
     - name: Upload Converted Logo
       uses: actions/upload-artifact@v2

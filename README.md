@@ -21,6 +21,8 @@
 
 # PineTime Smart Watch Logo Loader
 
+![PineTime Logo Loader](https://lupyuen.github.io/images/logo-loader.jpg)
+
 Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUBoot Bootloader.
 
 1.  Fork this repo

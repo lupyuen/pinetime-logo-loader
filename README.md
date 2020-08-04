@@ -45,17 +45,21 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
 1.  Click `Actions`. Click on the latest build. 
 
-1.  Download the Artifact named `my_sensor_app.img`
+1.  Wait about 5 minutes for the build to complete.
 
-    Unzip the downloaded zip file to get `my_sensor_app.img`
+    Download the Artifact named `my_sensor_app.img`
 
-1.  Flash the unzipped firmware `my_sensor_app.img` to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) at address `0x8000`
+1.  Unzip the downloaded zip file to get `my_sensor_app.img`
 
-1.  The Boot Logo will be written to PineTime's External SPI Flash. PineTime shows `Boot Logo Updated`
+    Flash the unzipped firmware `my_sensor_app.img` to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) at address `0x8000`
 
-1.  Restore PineTime by flashing the latest FreeRTOS firmware via [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
+1.  When the firmware runs, it will write the Boot Logo to PineTime's External SPI Flash.
 
-1.  PineTime will now boot with the new Boot Logo...
+    PineTime will show `Boot Logo Updated`
+
+1.  Restore the PineTime firmware by flashing the latest FreeRTOS firmware via [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
+
+1.  PineTime will now boot with the new Boot Logo stored in External SPI Flash...
 
 ![First ever Custom Boot Logo created by the PineTime Community](https://lupyuen.github.io/images/pinetime-rainbow.jpg)
 

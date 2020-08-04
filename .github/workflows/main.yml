@@ -96,6 +96,7 @@ jobs:
           # Convert the graphic from PNG to C 
           cd ${{ runner.temp }}/pinetime-graphic
           rustup default nightly
+          export RUST_BACKTRACE=1
           cargo run pinetime-graphic.png >~/pinetime-graphic.inc
 
     - name: Upload Converted Logo

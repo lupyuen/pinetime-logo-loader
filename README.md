@@ -47,7 +47,11 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
 1.  Restore PineTime by flashing the latest FreeRTOS firmware via [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
 
-1.  PineTime will now boot with the new Boot Logo
+1.  PineTime will now boot with the new Boot Logo...
+
+![First ever Custom Boot Logo created by the PineTime Community](https://lupyuen.github.io/images/pinetime-rainbow.jpg)
+
+_First ever Custom Boot Logo created by the PineTime Community_
 
 This repo is a Custom Firmware Build of [`pinetime-rust-mynewt`](https://github.com/lupyuen/pinetime-rust-mynewt)...
 

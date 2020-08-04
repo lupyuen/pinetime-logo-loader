@@ -35,6 +35,8 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
     -   Check the existing [`pinetime-graphic.png`](pinetime-graphic.png) for reference
 
+    -   See sample logos in [`logos`](logos)
+
 1.  GitHub Actions will auto-rebuild the firmware ([see the worflow](.github/workflows/main.yml))
 
 1.  Flash the firmware to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) (address `0x8000`) or via nRF Connect

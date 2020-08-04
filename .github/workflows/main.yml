@@ -98,13 +98,13 @@ jobs:
           rustup default nightly
           export RUST_BACKTRACE=1
           export TERM=vt100
-          cargo run -q pinetime-graphic.png >~/pinetime-graphic.inc
+          cargo run -q pinetime-graphic.png >~/libs/pinetime_boot/src/graphic.inc
 
     - name: Upload Converted Logo
       uses: actions/upload-artifact@v2
       with:
-        name: pinetime-graphic.inc
-        path: pinetime-graphic.inc
+        name: graphic.inc
+        path: libs/pinetime_boot/src/graphic.inc
           
     #########################################################################################
     # Download and Cache Dependencies

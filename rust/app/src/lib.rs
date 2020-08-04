@@ -104,6 +104,11 @@ extern "C" fn main() -> ! {  //  Declare extern "C" because it will be called by
     let rc = unsafe { start_ble() };
     assert!(rc == 0, "BLE fail");
 
+    //  Write the boot graphic
+    extern { fn write_graphic() -> i32; }  //  Defined in apps/my_sensor_app/src/write_graphic.c
+    #[cfg(feature = "write_graphic")]      //  If writing of boot graphic is enabled...
+    unsafe { write_graphic() };
+
     //  Start the display
     druid::start_display()
         .expect("DSP fail");

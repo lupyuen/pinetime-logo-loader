@@ -34,6 +34,7 @@ crate-type = ["staticlib"]
 # Optional features
 [features]
 default =  [          # Select the conditional compiled features
+    "write_graphic",  # Uncomment to write boot graphic
     "display_app",    # Uncomment to enable graphics display app
     # "ui_app",       # Uncomment to enable druid UI app
     # "visual_app",   # Uncomment to enable Visual Rust app
@@ -41,9 +42,10 @@ default =  [          # Select the conditional compiled features
     # "chip8_curve",  # Uncomment to render CHIP8 Emulator as curved surface (requires chip8_app)
     # "use_float",    # Uncomment to enable floating-point support e.g. GPS geolocation
 ]
-display_app  = []     # Define the features
-ui_app       = []
-visual_app   = []
-chip8_app    = []
-chip8_curve  = []
-use_float    = []
+write_graphic = []    # Define the features
+display_app   = []
+ui_app        = []
+visual_app    = []
+chip8_app     = []
+chip8_curve   = []
+use_float     = []

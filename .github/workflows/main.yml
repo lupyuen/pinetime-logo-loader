@@ -85,6 +85,25 @@ jobs:
       run:  set ; pwd ; ls -l
 
     #########################################################################################
+    # Convert Logo
+
+    - name: Convert Logo from PNG to C
+      run:  |
+          # Run pinetime-graphic in the temp folder to avoid Cargo.toml and .cargo conflicts
+          cp -r pinetime-graphic ${{ runner.temp }}
+          cp pinetime-graphic.png ${{ runner.temp }}/pinetime-graphic
+
+          # Convert the graphic from PNG to C 
+          cd ${{ runner.temp }}/pinetime-graphic
+          cargo run pinetime-graphic.png >~/pinetime-graphic.inc
+
+    - name: Upload Converted Logo
+      uses: actions/upload-artifact@v2
+      with:
+        name: pinetime-graphic.inc
+        path: pinetime-graphic.inc
+          
+    #########################################################################################
     # Download and Cache Dependencies
 
     # - name: Fetch cache for Rust Toolchain

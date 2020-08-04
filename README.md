@@ -47,7 +47,7 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
     ![Sample logos](https://lupyuen.github.io/images/loader-logos.png)
 
-1.  GitHub Actions will auto-build the firmware ([see the worflow](.github/workflows/main.yml))
+1.  GitHub Actions will auto-build the firmware ([see the workflow](.github/workflows/main.yml))
 
 1.  Click `Actions`. Click on the latest build. 
 

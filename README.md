@@ -25,7 +25,7 @@
 
 Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUBoot Bootloader.
 
-1.  Fork this repo
+1.  Click `Fork` to fork this repo
 
 1.  In the new repo, click `Actions` → `I Understand My Workflows, Enable Them`
 
@@ -43,9 +43,13 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
 1.  GitHub Actions will auto-rebuild the firmware ([see the worflow](.github/workflows/main.yml))
 
-1.  Click `Actions`, click on the latest build. Download the Artifact `my_sensor_app.img`
+1.  Click `Actions`. Click on the latest build. 
 
-1.  Flash the firmware `my_sensor_app.img` to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) at address `0x8000`
+1.  Download the Artifact named `my_sensor_app.img`
+
+    Unzip the downloaded zip file to get `my_sensor_app.img`
+
+1.  Flash the unzipped firmware `my_sensor_app.img` to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) at address `0x8000`
 
 1.  The Boot Logo will be written to PineTime's External SPI Flash. PineTime shows `Boot Logo Updated`
 

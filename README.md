@@ -25,6 +25,8 @@
 
 Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUBoot Bootloader.
 
+1.  If our PineTime is not running on the MCUBoot Bootloader, flash the bootloader with [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
+
 1.  Click `Fork` to fork this repo
 
 1.  In the new repo, click `Actions` → `I Understand My Workflows Enable Them`
@@ -67,7 +69,7 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
     PineTime will show `Boot Logo Updated`
 
-1.  Restore the PineTime firmware by flashing the latest FreeRTOS firmware via [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
+1.  Restore the PineTime firmware by flashing the latest InfiniTime firmware via [PineTime Updater](https://github.com/lupyuen/pinetime-updater)
 
 1.  PineTime will now boot with the new Boot Logo stored in External SPI Flash...
 

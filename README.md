@@ -27,29 +27,37 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
 1.  Click `Fork` to fork this repo
 
-1.  In the new repo, click `Actions` → `I Understand My Workflows, Enable Them`
+1.  In the new repo, click `Actions` → `I Understand My Workflows Enable Them`
+
+    ![Enable GitHub Actions](https://lupyuen.github.io/images/loader-actions.png)
 
 1.  Click `Code` → `Add File`  → `Upload Files`
 
-1.  Upload a the PNG image file with the following specs...
+    ![Upload File](https://lupyuen.github.io/images/loader-upload.png)
 
-    -   Filename should be `pinetime-graphic.png`
+1.  Upload a PNG image file with the following format...
 
-    -   240x240 resolution
+    -   Filename `pinetime-graphic.png`
 
-    -   24-bit RGB
+    -   240 x 240 resolution
 
-    -   See sample logos in [`logos`](logos)
+    -   24-bit RGB color
 
-1.  GitHub Actions will auto-rebuild the firmware ([see the worflow](.github/workflows/main.yml))
+    See sample logos in [`logos`](logos)
+
+1.  GitHub Actions will auto-build the firmware ([see the worflow](.github/workflows/main.yml))
 
 1.  Click `Actions`. Click on the latest build. 
 
+    ![GitHub Actions Build](https://lupyuen.github.io/images/loader-build.png)
+
 1.  Wait about 5 minutes for the build to complete.
 
-    Download the Artifact named `my_sensor_app.img`
+    Click on the Artifact named `my_sensor_app.img`
 
-1.  Unzip the downloaded zip file to get `my_sensor_app.img`
+    ![GitHub Actions Artifact](https://lupyuen.github.io/images/loader-artifact.png)
+
+1.  Unzip the downloaded file.
 
     Flash the unzipped firmware `my_sensor_app.img` to PineTime via [PineTime Updater](https://github.com/lupyuen/pinetime-updater) at address `0x8000`
 

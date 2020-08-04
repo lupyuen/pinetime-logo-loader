@@ -43,7 +43,9 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
     -   24-bit RGB color
 
-    See sample logos in [`logos`](logos)
+    -   See sample logos in [`logos`](logos)
+
+    ![Sample logos](https://lupyuen.github.io/images/loader-logos.png)
 
 1.  GitHub Actions will auto-build the firmware ([see the worflow](.github/workflows/main.yml))
 

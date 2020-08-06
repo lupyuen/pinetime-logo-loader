@@ -81,6 +81,10 @@ The Boot Logo format (RGB565) is explained here...
 
 [_MCUBoot Bootloader for PineTime Smart Watch (nRF52)_](https://lupyuen.github.io/pinetime-rust-mynewt/articles/mcuboot)
 
+The GitHub Actions Workflow calls `pinetime-graphic` to convert the PNG image to C code (which is embedded in the firmware)...
+
+[`github.com/lupyuen/pinetime-graphic`](https://github.com/lupyuen/pinetime-graphic)
+
 This repo is a Custom Firmware Build of [`pinetime-rust-mynewt`](https://github.com/lupyuen/pinetime-rust-mynewt)...
 
 # PineTime Smart Watch Firmware with Apache Mynewt and Embedded Rust

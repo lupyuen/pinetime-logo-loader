@@ -77,6 +77,10 @@ Load your Custom Boot Logo to PineTime Smart Watch. Works with the PineTime MCUB
 
 _First ever Custom Boot Logo created by the PineTime Community_
 
+The Boot Logo format (RGB565) is explained here...
+
+[_MCUBoot Bootloader for PineTime Smart Watch (nRF52)_](https://lupyuen.github.io/pinetime-rust-mynewt/articles/mcuboot)
+
 This repo is a Custom Firmware Build of [`pinetime-rust-mynewt`](https://github.com/lupyuen/pinetime-rust-mynewt)...
 
 # PineTime Smart Watch Firmware with Apache Mynewt and Embedded Rust

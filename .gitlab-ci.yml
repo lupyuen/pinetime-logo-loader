@@ -73,7 +73,7 @@ build:
     - cp -r pinetime-graphic /tmp
     - cp pinetime-graphic.png /tmp/pinetime-graphic
     # Convert the graphic from PNG to C 
-    - push /tmp/pinetime-graphic
+    - pushd /tmp/pinetime-graphic
     - rustup default nightly
     - export RUST_BACKTRACE=1
     - export TERM=vt100
@@ -81,14 +81,11 @@ build:
     - popd
 
   #########################################################################################
-  # Build Bootloader and Rust+Mynewt Application Firmware
+  # Build Rust+Mynewt Application Firmware
 
   script:
     # Set PATH
     - export PATH=$PATH:/tmp/go/bin:/tmp/mynewt-newt/newt:/tmp/gcc-arm-none-eabi-8-2019-q3-update/bin
-
-    # Build Bootloader
-    - ./scripts/nrf52/build-boot.sh
 
     # Build Application Firmware
     - ./scripts/build-app.sh
@@ -97,11 +94,11 @@ build:
     - ./scripts/nrf52/image-app.sh
 
   #########################################################################################
-  # Upload Bootloader and Application Firmware
+  # Upload Application Firmware
 
   artifacts:
     paths:
-      - bin
+      - bin/targets/nrf52_my_sensor/app/apps/my_sensor_app/my_sensor_app.img
 
   #########################################################################################
   # Cache Outputs

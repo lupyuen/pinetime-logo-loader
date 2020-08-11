@@ -65,6 +65,21 @@ build:
     - export PATH=$PATH:/tmp/gcc-arm-none-eabi-8-2019-q3-update/bin
     - arm-none-eabi-gcc --version
 
+    #########################################################################################
+    # Convert Logo
+
+    # Convert Logo from PNG to C
+    # Run pinetime-graphic in the temp folder to avoid Cargo.toml and .cargo conflicts
+    - cp -r pinetime-graphic /tmp
+    - cp pinetime-graphic.png /tmp/pinetime-graphic
+    # Convert the graphic from PNG to C 
+    - push /tmp/pinetime-graphic
+    - rustup default nightly
+    - export RUST_BACKTRACE=1
+    - export TERM=vt100
+    - cargo run -q pinetime-graphic.png >$CI_PROJECT_DIR/apps/my_sensor_app/src/write_graphic.inc
+    - popd
+
   #########################################################################################
   # Build Bootloader and Rust+Mynewt Application Firmware
 

@@ -92,13 +92,19 @@ build:
 
     # Create Application Firmware Image
     - ./scripts/nrf52/image-app.sh
+    
+    # Copy the Application Firmware Image to top level for uploading
+    - cp bin/targets/nrf52_my_sensor/app/apps/my_sensor_app/my_sensor_app.img .
 
   #########################################################################################
   # Upload Application Firmware
 
   artifacts:
     paths:
-      - bin/targets/nrf52_my_sensor/app/apps/my_sensor_app/my_sensor_app.img
+      # Application Firmware Image for flashing
+      - my_sensor_app.img
+      # Other Application Firmware Outputs
+      - bin/targets/nrf52_my_sensor/app/apps/my_sensor_app/my_sensor_app.*
 
   #########################################################################################
   # Cache Outputs
